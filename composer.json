@@ -1,0 +1,33 @@
+{
+    "name": "kaiopiola/pagarme",
+    "description": "Integração sistema Pagar-Me API v5 em PHP",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaio Piola",
+            "email": "kaio.piola@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0.1"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kaiopiola\\Pagarme\\": "src/"
+        }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\": "tests/"
+      }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
+    },
+    "minimum-stability": "dev"
+}
