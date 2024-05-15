@@ -1,12 +1,11 @@
 <?php
 
-namespace Kaiopiola\Pagarme\Functions\Clientes;
+namespace Kaiopiola\Pagarme\Functions\Customers;
 
 use Exception as GlobalException;
-use Kaiopiola\Pagarme\Functions\Clientes\Settings;
 use Kaiopiola\Pagarme\Request\Request;
 
-class Clientes extends Settings
+class CustomersList extends CustomerListSettings
 {
     protected string $APIKey;
     protected ?string $name = null;
@@ -17,7 +16,7 @@ class Clientes extends Settings
     protected ?int $size = null;
     protected ?string $code = null;
 
-    public function listarClientes()
+    public function execute()
     {
         $url = "https://api.pagar.me/core/v5/customers";
         $method = "GET";
