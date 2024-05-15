@@ -16,6 +16,11 @@ You can feel free to help on this project with PRs or opening issues.
 
 No version available to download right now. Please **DON'T USE** this code in production yet.
 
+## Functions available now:
+
+- Customer list with filters
+- Get a speficic customer by ID
+
 ## Dependencies
 
 GuzzleHttp 7.0.1 or above. Included in ```composer.json```.
